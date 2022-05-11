@@ -1,3 +1,5 @@
-import getNews from "./getNews";
+import { getNews } from "./getNews";
 
 getNews()
+
+
