@@ -2,15 +2,18 @@ import { initialState } from '../initialState';
 
 export const renderCategories = () => {
 
-    const root = document.querySelector('.root');
+    const root = document.querySelector('#root');
+    const cat = document.createElement("div")
+    cat.classList.add("add_cat")
 
     initialState.categories.forEach(category => {
-        console.log(initialState);
         const sidebarWithCategories = document.createElement('div');
-        console.log(category);
         sidebarWithCategories.textContent = category.name;
+        
+        cat.append(sidebarWithCategories)
+        root.prepend(cat);
 
-        root.prepend(sidebarWithCategories);
 
     });
 }
+export default renderCategories;

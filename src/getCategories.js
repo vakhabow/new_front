@@ -8,3 +8,5 @@ export const getCategories = () => {
             renderCategories();
         })
 }
+export default getCategories;
+
