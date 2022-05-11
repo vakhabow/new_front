@@ -5,14 +5,13 @@ export function getComments(id) {
   fetch(`http://localhost:4200/comments/${id}`)
     .then((res) => res.json())
     .then((comments) => {
-        console.log(comments);
       initialState.comments = comments;
-      renderComments()
+      renderComments();
     })
     .catch((e) => {
       console.log("Ошибка, брат:", e);
     });
-    render();
+  render();
 }
 
 export default getComments;
