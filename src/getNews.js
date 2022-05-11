@@ -5,8 +5,6 @@ export function getNews() {
   .then(res => res.json())
   .then(news => {
     initialState.news = news
-
-    
   })
 }
 
