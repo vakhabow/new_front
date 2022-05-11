@@ -1,5 +1,6 @@
-import { getNews } from "./getNews";
 
+import getCategories from "./getCategories";
+import getNews from "./getNews";
+
+getCategories()
 getNews()
-
-
