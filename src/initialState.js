@@ -1,8 +1,8 @@
-
 export const initialState = {
   categories: [],
   comments: [],
-  news: []
-}
+  news: [],
+  names: [],
+};
 
 export default initialState;
