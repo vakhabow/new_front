@@ -15,7 +15,6 @@ export const render = () => {
       const div = document.createElement("div");
       div.textContent = news.title;
       div.addEventListener("click", () => getNewsById(news._id));
-      div.addEventListener("click", () => getComments(news._id));
 
       news_con.append(div);
       root.append(news_con);
@@ -32,8 +31,6 @@ export const render = () => {
     // comment.textContent = initialState.comments
     news_con.append(title, text);
     root.append(news_con);
-
-    ;
   }
 };
 export default render;

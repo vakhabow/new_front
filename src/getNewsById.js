@@ -1,3 +1,4 @@
+import getComments from "./getComments";
 import initialState from "./initialState";
 import { render } from "./render/renderNews";
 
@@ -7,7 +8,7 @@ export function getNewsById(id) {
     .then((news) => {
       
       initialState.news = news;
-      render()
+      getComments(id);
     });
 }
 export default getNewsById;
