@@ -4,10 +4,15 @@ export const renderComments = () => {
   const root = document.getElementById("root");
   initialState.comments.forEach((elem) => {
     const commentWrapper = document.createElement("div");
-    // console.log(commentWrapper);
-    commentWrapper.textContent = elem.text;
+    const userName = document.createElement("div");
+    const commentBody = document.createElement("div");
+
+    console.log(initialState.comments);
+    userName.textContent = elem.user.name;
+    commentBody.textContent = elem.text;
+    commentWrapper.append(userName, commentBody);
     root.append(commentWrapper);
-    console.log(initialState.comments)
+    
   });
 };
 
