@@ -16,7 +16,7 @@
   \*******************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"footerNews\": function() { return /* binding */ footerNews; }\n/* harmony export */ });\nfunction footerNews() {\n  var root = document.getElementById('root');\n  var foot_main = document.createElement('div');\n  foot_main.classList.add(\"foot_main\");\n  var contacts = document.createElement('div');\n  contacts.classList.add('contacts');\n  var icon = document.createElement('div');\n  contacts.textContent = \"mor\";\n  icon.textContent = \"О нас\";\n  foot_main.append(contacts, icon);\n  root.after(foot_main);\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (footerNews);\n\n//# sourceURL=webpack:///./footer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"footerNews\": function() { return /* binding */ footerNews; }\n/* harmony export */ });\n/* harmony import */ var _img_facebook_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../img/facebook.jpg */ \"../img/facebook.jpg\");\n/* harmony import */ var _img_insta_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/insta.jpg */ \"../img/insta.jpg\");\n/* harmony import */ var _img_twitter_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/twitter.jpg */ \"../img/twitter.jpg\");\n/* harmony import */ var _img_youtube_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/youtube.jpg */ \"../img/youtube.jpg\");\n\n\n\n\nfunction footerNews() {\n  var root = document.getElementById('root');\n  var foot_main = document.createElement('div');\n  foot_main.classList.add(\"foot_main\");\n  var contacts = document.createElement('div');\n  contacts.classList.add('contacts');\n  contacts.textContent = \"+7 (999)-999-99-99\";\n  var icon = document.createElement('div');\n  icon.textContent = \"О нас\";\n  icon.a = \"#\";\n  var sait = document.createElement('div');\n  sait.classList.add('sait');\n  var facebook = document.createElement('img');\n  facebook.src = _img_facebook_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n  var insta = document.createElement('img');\n  insta.src = _img_insta_jpg__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\n  var twitter = document.createElement('img');\n  twitter.src = _img_twitter_jpg__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\n  var youtube = document.createElement('img');\n  youtube.src = _img_youtube_jpg__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\n  youtube.a = \"#\";\n  sait.append(facebook, insta, twitter, youtube);\n  foot_main.append(icon, sait, contacts);\n  root.after(foot_main);\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (footerNews);\n\n//# sourceURL=webpack:///./footer.js?");
 
 /***/ }),
 
@@ -70,13 +70,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./header.js":
+/*!*******************!*\
+  !*** ./header.js ***!
+  \*******************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"headerNews\": function() { return /* binding */ headerNews; }\n/* harmony export */ });\n/* harmony import */ var _img_header_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../img/header.jpg */ \"../img/header.jpg\");\n\nfunction headerNews() {\n  var root = document.getElementById(\"root\");\n  var header = document.createElement(\"div\"); // const h1 = document.createElement('img')\n  // h1.src = img\n\n  header.classList.add(\"header\");\n  header.src = _img_header_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n  var title = document.createElement(\"h1\");\n  title.classList.add(\"time\");\n  title.textContent = 'NEWS'; // time.src = img;\n  //  time.innerHTML = date_time()\n\n  var join = document.createElement(\"div\");\n  join.classList.add(\"join\");\n  join.textContent = \"Войти\";\n  join.a = '#';\n  var authorization = document.createElement(\"div\");\n  authorization.classList.add(\"author\");\n  authorization.textContent = \"Авторизация\";\n  header.append(title, join, authorization);\n  root.before(header); // function date_time()\n  // {\n  //     const current_datetime = new Date();\n  //     const day = zero_first_format(current_datetime.getDate());\n  //     const month = zero_first_format(current_datetime.getMonth()+1);\n  //     const year = current_datetime.getFullYear();\n  //     const hours = zero_first_format(current_datetime.getHours());\n  //     const minutes = zero_first_format(current_datetime.getMinutes());\n  //     return day+\".\"+month+\".\"+year+\" \"+hours+\":\"+minutes;\n  // };\n\n  /* выводим текущую дату и время на сайт в блок с id \"current_date_time_block\" */\n  // document.querySelector('.time').innerHTML = date_time();\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (headerNews);\n\n//# sourceURL=webpack:///./header.js?");
+
+/***/ }),
+
 /***/ "./index.js":
 /*!******************!*\
   !*** ./index.js ***!
   \******************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./styles.css\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer */ \"./footer.js\");\n/* harmony import */ var _getCategories__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getCategories */ \"./getCategories.js\");\n/* harmony import */ var _getNews__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./getNews */ \"./getNews.js\");\n\n\n\n\n(0,_getCategories__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n(0,_getNews__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n(0,_footer__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./styles.css\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer */ \"./footer.js\");\n/* harmony import */ var _getCategories__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getCategories */ \"./getCategories.js\");\n/* harmony import */ var _getNews__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./getNews */ \"./getNews.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./header */ \"./header.js\");\n\n\n\n\n\n(0,_getCategories__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n(0,_getNews__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n(0,_footer__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n(0,_header__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -147,6 +157,56 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 /***/ (function(module) {
 
 eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=webpack:///../node_modules/css-loader/dist/runtime/noSourceMaps.js?");
+
+/***/ }),
+
+/***/ "../img/facebook.jpg":
+/*!***************************!*\
+  !*** ../img/facebook.jpg ***!
+  \***************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"405f945dc822e9f43ada085dc4b68199.jpg\");\n\n//# sourceURL=webpack:///../img/facebook.jpg?");
+
+/***/ }),
+
+/***/ "../img/header.jpg":
+/*!*************************!*\
+  !*** ../img/header.jpg ***!
+  \*************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"f141d5a9abcc1659216eacc6059f93b8.jpg\");\n\n//# sourceURL=webpack:///../img/header.jpg?");
+
+/***/ }),
+
+/***/ "../img/insta.jpg":
+/*!************************!*\
+  !*** ../img/insta.jpg ***!
+  \************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"9bb0fa3fc8047800b906d14415bc2110.jpg\");\n\n//# sourceURL=webpack:///../img/insta.jpg?");
+
+/***/ }),
+
+/***/ "../img/twitter.jpg":
+/*!**************************!*\
+  !*** ../img/twitter.jpg ***!
+  \**************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"061bd3c40b848ae299c30c899b750272.jpg\");\n\n//# sourceURL=webpack:///../img/twitter.jpg?");
+
+/***/ }),
+
+/***/ "../img/youtube.jpg":
+/*!**************************!*\
+  !*** ../img/youtube.jpg ***!
+  \**************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"abe05dfedd9c93f954b1d4654b7e8105.jpg\");\n\n//# sourceURL=webpack:///../img/youtube.jpg?");
 
 /***/ }),
 
@@ -271,6 +331,18 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /******/ 		};
 /******/ 	}();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	!function() {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	}();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	!function() {
 /******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
@@ -285,6 +357,26 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	!function() {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	}();
 /******/ 	
 /************************************************************************/
