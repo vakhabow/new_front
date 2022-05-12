@@ -14,6 +14,7 @@ export const render = () => {
 
     initialState.news.forEach((news) => {
       const div = document.createElement("div");
+      div.classList.add("news_list")
       div.textContent = news.title;
       div.addEventListener("click", () => getNewsById(news._id));
 
