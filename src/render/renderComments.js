@@ -6,11 +6,13 @@ export const renderComments = () => {
     const commentWrapper = document.createElement("div");
     const userName = document.createElement("div");
     const commentBody = document.createElement("div");
-    
+
+    console.log(initialState.comments);
     userName.textContent = elem.user.name;
     commentBody.textContent = elem.text;
     commentWrapper.append(userName, commentBody);
     root.append(commentWrapper);
+    
   });
 };
 
