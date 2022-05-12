@@ -1,0 +1,22 @@
+#root {
+  display: flex;
+  justify-content: space-between;
+  min-height: 90vh;
+}
+.add_cat {
+  width: 25%;
+}
+.add_news {
+  width: 75%;
+}
+.news_list{
+  border: 1px solid rgb(51, 51, 119);
+  margin-top: 5px;
+  padding: 5px;
+}
+.foot_main{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+}
