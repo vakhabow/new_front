@@ -1,24 +1,21 @@
 import { getNewsById } from "../getNewsById";
 import initialState from "../initialState";
 
-const root = document.getElementById("root");
-const news_con = document.createElement("div");
-news_con.classList.add("add_news");
+export const renderCat = () => {
+  const root = document.getElementById("root");
+  const news_con = document.createElement("div")
 
-export const render = () => {
+  news_con.classList.add("add_news")
 
-  news_con.textContent = "";
 
   if (Array.isArray(initialState.news)) {
-
+    news_con.textContent = "";
 
     initialState.news.forEach((news) => {
       const div = document.createElement("div");
-      div.classList.add("news_list")
       div.textContent = news.title;
       div.addEventListener("click", () => getNewsById(news._id));
-
-      news_con.append(div);
+      news_con.append(div)
       root.append(news_con);
     });
   } else {
@@ -31,8 +28,9 @@ export const render = () => {
 
     // const comment = document.createElement('div')
     // comment.textContent = initialState.comments
+
     news_con.append(title, text);
-    root.append(news_con);
+    root.append(news_con)
   }
 };
 export default render;
